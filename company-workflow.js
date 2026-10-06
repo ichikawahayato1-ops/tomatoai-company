@@ -2,10 +2,10 @@ import {RemoteWorkflow} from './remote-workflow.js';
 // Durable local requests. Stage completion is explicitly a demo, not an AI result.
 export const jobStages=[
  {agent:'ceo',status:'analyzing',label:'TOMAが依頼を整理'},
- {agent:'research',status:'researching',label:'Researchが調査項目を整理'},
- {agent:'analyst',status:'analyzing',label:'Analystが構成を整理'},
- {agent:'creator',status:'creating',label:'Creatorが下書きを準備'},
- {agent:'critic',status:'reviewing',label:'Criticが確認'},
+ {agent:'research',status:'researching',label:'LYCOが調査項目を整理'},
+ {agent:'analyst',status:'analyzing',label:'SOLが構成を整理'},
+ {agent:'creator',status:'creating',label:'POMOが下書きを準備'},
+ {agent:'critic',status:'reviewing',label:'RUBYが確認'},
  {agent:'ceo',status:'reviewing',label:'TOMAが納品を確認'}
 ];
 export function codexBrief(job){return `# Tomato AI Company — Codexへの依頼
@@ -27,7 +27,7 @@ export class CompanyWorkflow {
  create(request){request=request.trim().slice(0,600);if(!request)return false;const job={id:(typeof crypto.randomUUID==='function'?crypto.randomUUID():Array.from(crypto.getRandomValues(new Uint8Array(16)),b=>b.toString(16).padStart(2,'0')).join('')),request,step:0,history:[{at:new Date().toISOString(),text:'依頼を受付'}],artifact:null};return this.commit([...this.jobs,job])?job:null;}
  active(){return this.jobs.find(j=>j.step<6);}
  advance(id){const active=this.active();if(!active||active.id!==id)return false;const next=structuredClone(this.jobs),job=next.find(j=>j.id===id);job.history.push({at:new Date().toISOString(),text:jobStages[job.step].label+'（デモ確認済み）'});job.step++;if(job.step===6)job.artifact=`# 依頼整理シート（デモ）\n\n## 依頼\n${job.request}\n\n## 制作前に確認すること\n- 誰に届けるか\n- 目的と完成条件\n- 必要な資料・根拠\n- 納期と制約\n\n## 次の行動\n上記の条件を具体化して、調査・制作に進みます。\n\n※これは依頼文から作成したテンプレートです。実際の調査・AI制作・品質審査は未実行です。\n`;return this.commit(next);}
- revise(id){const active=this.active();if(!active||active.id!==id||active.step!==4)return false;const next=structuredClone(this.jobs),job=next.find(j=>j.id===id);job.step=3;job.history.push({at:new Date().toISOString(),text:'CriticからCreatorへ修正依頼（デモ）'});return this.commit(next);}
+ revise(id){const active=this.active();if(!active||active.id!==id||active.step!==4)return false;const next=structuredClone(this.jobs),job=next.find(j=>j.id===id);job.step=3;job.history.push({at:new Date().toISOString(),text:'RUBYからPOMOへ修正依頼（デモ）'});return this.commit(next);}
 }
 export function mountCompanyWorkflow({dispatch}){
  const panel=document.createElement('section');panel.className='company-panel';panel.innerHTML='<h2>会社の仕事ノート</h2><p>依頼を保存して、担当への引き継ぎを試そう。進行と成果物はデモです。</p><form><label for="company-request">TOMAへの仕事の依頼</label><textarea id="company-request" maxlength="600" required placeholder="何を作りたい？ 目的や希望も教えてね。"></textarea><button>依頼を登録する</button></form><p class="company-error" role="alert"></p><div class="company-jobs"></div>';
