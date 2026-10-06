@@ -317,3 +317,5 @@
 .ceo-seat{position:absolute;inset:0;z-index:2;clip-path:inset(0 0 26% 0)}
 
 .employee.original-toma[data-role=creator][data-action=WORK]:not([data-moving=true]) .role-prop{display:block}
+
+.sns-department{margin-top:24px;padding:28px;border:1px solid #e9e2d4;border-radius:24px;background:#fffdf6}.sns-department h2{margin:10px 0;color:#617c6a;font-size:23px}.sns-department p{font-size:13px;line-height:1.8;color:#798577}.sns-account{font-size:12px;color:#8f7869}.sns-department nav{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0}.sns-department nav a{padding:13px 18px;border-radius:14px;background:#edf2e7;color:#526955;text-decoration:none;font-size:13px}.sns-department nav a:first-child{background:#637e67;color:white}.sns-department .sns-note,.sns-department details{font-size:12px;color:#89917d}.sns-department summary{cursor:pointer}.sns-department nav a:hover{filter:brightness(.96)}@media(max-width:760px){.sns-department{padding:22px}.sns-department nav{display:grid;grid-template-columns:1fr}.sns-department nav a{text-align:center}}
