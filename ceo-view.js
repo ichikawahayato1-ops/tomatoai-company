@@ -18,7 +18,7 @@ export function createCeoView({getSnapshot}) {
  function message(role,text){const p=document.createElement('p');p.className='ceo-message '+role;p.textContent=text;log.append(p);log.scrollTop=log.scrollHeight;}
  message('toma','来てくれてうれしい♪ 今日は何から話そうか？');
  function reply(text){
-  if(/仕事|進捗|みんな/.test(text)){const s=getSnapshot(),names={research:'調査担当',analyst:'分析担当',creator:'制作担当',critic:'レビュー担当',ceo:'CEO'},states={idle:'待機中',walking:'移動中',researching:'資料を読んでいるよ',analyzing:'分析中',creating:'制作中',reviewing:'確認中',handoff:'資料をお届け中',resting:'ひと休み中',dozing:'うとうと中',sleeping:'おやすみ中',completed:'作業完了',rejected:'修正を相談中'};return 'いまのオフィスの様子だよ♪\n'+Object.entries(s.agents).map(([id,a])=>`${names[id]}：${states[a.status]||a.status}`).join('\n')+`\n納品BOXには${s.deliveries.length}件あるよ。`;}
+  if(/仕事|進捗|みんな/.test(text)){const s=getSnapshot(),names={research:'LYCO（リコ）・リサーチ',analyst:'SOL（ソル）・分析・戦略',creator:'POMO（ポモ）・制作',critic:'RUBY（ルビー）・品質管理',ceo:'TOMA・CEO'},states={idle:'待機中',walking:'移動中',researching:'資料を読んでいるよ',analyzing:'分析中',creating:'制作中',reviewing:'確認中',handoff:'資料をお届け中',resting:'ひと休み中',dozing:'うとうと中',sleeping:'おやすみ中',completed:'作業完了',rejected:'修正を相談中'};return 'いまのオフィスの様子だよ♪\n'+Object.entries(s.agents).map(([id,a])=>`${names[id]}：${states[a.status]||a.status}`).join('\n')+`\n納品BOXには${s.deliveries.length}件あるよ。`;}
   if(/疲|休|つら|眠/.test(text))return 'そっか、おつかれさま。いったんひと息つこう♪\n急いで決めなくて大丈夫。休んだあとで、いちばん小さな一歩をいっしょに考えよう。';
   if(/アイデア|作り|企画|相談/.test(text))return 'いいね、聞かせて♪\nまず「誰に届けたいか」と「どんな気持ちになってほしいか」をひとつずつ教えて？ そこから形を考えていこう。';
   return '話してくれてありがとう♪\nその話で、いちばん大事にしたいことは何かな？ まずそこから、ひとつずつ整理してみよう。';

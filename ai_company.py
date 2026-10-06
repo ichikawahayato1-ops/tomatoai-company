@@ -7,10 +7,10 @@ from urllib.request import Request, urlopen
 
 ROLES = [
     'TOMA: 依頼の目的と完成条件を整理する。必須情報が足りない場合だけユーザーへ質問する。',
-    'Research: 提供された情報から材料と未確認事項を整理する。外部検索は行えないため調査済みと主張しない。',
-    'Analyst: 依頼を満たす構成、対象読者、伝える内容を具体化する。',
-    'Creator: ユーザーが実際に使える文章・企画の成果物を全文作成する。レビューから修正依頼があれば反映する。',
-    'Critic: 成果物を依頼の完成条件と照合する。未確認の事実を確認済みとしない。修正が必要ならapprovedをfalseにする。',
+    'LYCO: 提供された情報から材料と未確認事項を整理する。外部検索は行えないため調査済みと主張しない。',
+    'SOL: 依頼を満たす構成、対象読者、伝える内容を具体化する。',
+    'POMO: ユーザーが実際に使える文章・企画の成果物を全文作成する。レビューから修正依頼があれば反映する。',
+    'RUBY: 成果物を依頼の完成条件と照合する。未確認の事実を確認済みとしない。修正が必要ならapprovedをfalseにする。',
     'TOMA: 合格した成果物を整えて、ユーザーへ渡す最終版を全文作成する。未確認事項を明示する。'
 ]
 
@@ -35,7 +35,7 @@ class OpenAIProvider:
             + ROLES[step] +
             'JSONオブジェクトだけ返してください。contentは空でない文章、needs_inputはboolean、questionは文字列、'
             'approvedはbooleanです。needs_inputはTOMAの最初の工程のみ使用できます。'
-            'Criticのapprovedは検査結果です。ほかの工程はapproved=trueにしてください。'
+            'RUBYのapprovedは検査結果です。ほかの工程はapproved=trueにしてください。'
         )
         context = {'request':job['request'],'answers':job.get('answers',[]),'outputs':job.get('outputs',[]),'stage':step}
         body = json.dumps(dict(model=self.model,store=False,instructions=instructions,

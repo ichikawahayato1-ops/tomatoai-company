@@ -63,20 +63,20 @@ function makeJob(){
  for(const e of employees)update(e.id,e.id==='analyst'?'analyzing':e.id==='creator'?'creating':'idle',{task:title,progress:0,destination:null,from:null,to:null});
  if(job===1){positions.set('research',[460,345]);positions.set('critic',[590,380]);}
  steps=[
- ['research','walking','research','Researchが自分の席へ向かっています。','analyst'],
- ['research','researching',null,'Researchがアイデアの種を探しています。','analyst'],
- ['research','handoff','analyst','Researchが調査メモをAnalystに届けています。','analyst'],
- ['analyst','analyzing',null,'Analystが情報を整理しています。','creator'],
- ['analyst','handoff','creator','AnalystがCreatorに企画を渡しています。','creator'],
- ['creator','creating',null,'Creatorが投稿のデザインを制作しています。','critic'],
- ['critic','walking','creator','CriticがCreatorの仕事を見に行きます。','creator'],
- ['critic','reviewing','creator','Criticがデザインをやさしくチェックしています。','creator'],
- ['critic','rejected','creator','Critic「見出しをもう少し読みやすくしよう！」','creator'],
- ['creator','creating',null,'Creatorがフィードバックを反映しています。','critic'],
- ['critic','reviewing','creator','Critic「いいね！これで届けよう。」','ceo'],
- ['critic','handoff','ceo','Criticが完成した仕事をCEOに届けています。','ceo'],
- ['ceo','reviewing',null,'CEOが仕上がりを最終確認しています。','Delivery BOX'],
- ['ceo','handoff','box','CEOが納品BOXへ成果物を運んでいます。','Delivery BOX'],
+ ['research','walking','research','LYCOが自分の席へ向かっています。','analyst'],
+ ['research','researching',null,'LYCOがアイデアの種を探しています。','analyst'],
+ ['research','handoff','analyst','LYCOが調査メモをSOLに届けています。','analyst'],
+ ['analyst','analyzing',null,'SOLが情報を整理しています。','creator'],
+ ['analyst','handoff','creator','SOLがPOMOに企画を渡しています。','creator'],
+ ['creator','creating',null,'POMOが投稿のデザインを制作しています。','critic'],
+ ['critic','walking','creator','RUBYがPOMOの仕事を見に行きます。','creator'],
+ ['critic','reviewing','creator','RUBYがデザインをやさしくチェックしています。','creator'],
+ ['critic','rejected','creator','RUBY「見出しをもう少し読みやすくしよう！」','creator'],
+ ['creator','creating',null,'POMOがフィードバックを反映しています。','critic'],
+ ['critic','reviewing','creator','RUBY「いいね！これで届けよう。」','ceo'],
+ ['critic','handoff','ceo','RUBYが完成した仕事をTOMAに届けています。','ceo'],
+ ['ceo','reviewing',null,'TOMAが仕上がりを最終確認しています。','Delivery BOX'],
+ ['ceo','handoff','box','TOMAが納品BOXへ成果物を運んでいます。','Delivery BOX'],
  ['ceo','completed',null,'お仕事完了。納品BOXに新しい成果物が届きました。',null]
  ];applyStep();
 }

@@ -7,7 +7,7 @@ from urllib.parse import urlsplit, unquote
 from ai_company import CompanyRunner, OpenAIProvider, ProviderError
 
 ROOT = Path(__file__).resolve().parent
-STAGES = ['TOMAが依頼を整理','Researchが調査項目を整理','Analystが構成を整理','Creatorが下書きを準備','Criticが確認','TOMAが納品を確認']
+STAGES = ['TOMAが依頼を整理','LYCOが調査項目を整理','SOLが構成を整理','POMOが下書きを準備','RUBYが確認','TOMAが納品を確認']
 
 def now():
     return datetime.now(timezone.utc).isoformat()
@@ -45,7 +45,7 @@ class JobRepository:
                 if active['step']!=4:
                     raise ValueError('差し戻しはレビュー中にできます。')
                 active['step']=3
-                active['history'].append(dict(at=now(),text='CriticからCreatorへ修正依頼（デモ）'))
+                active['history'].append(dict(at=now(),text='RUBYからPOMOへ修正依頼（デモ）'))
             elif action=='advance':
                 active['history'].append(dict(at=now(),text=STAGES[active['step']]+'（デモ確認済み）'))
                 active['step']+=1
@@ -95,7 +95,7 @@ class JobRepository:
                     job['execution']='failed';job['error']='レビューで未解決の点があります。依頼内容を補足して再試行してください。'
                 else:
                     job['step']=3
-                    job['history'].append(dict(at=now(),text='CriticからCreatorへ修正依頼'))
+                    job['history'].append(dict(at=now(),text='RUBYからPOMOへ修正依頼'))
                 return
             job['step']+=1
             if job['step']==6:
