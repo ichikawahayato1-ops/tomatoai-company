@@ -305,3 +305,10 @@
 /* Keep each companion's body and hoodie consistent in every office activity. */
 .employee.custom-companion .expression-art{display:none!important}
 .employee.custom-companion[data-facing=front]:not([data-moving=true]):not([data-seated=true]):not([data-action=SLEEP]):not([data-action=SLEEPY]) .toma-art{display:block}
+/* Desk props share one camera angle, warm lighting and a contact plane. */
+.ceo-desk>.ceo-laptop,.ceo-desk>.ceo-cup,.ceo-desk>.ceo-notebook{display:none}
+.ceo-desk-props{position:absolute;left:2%;bottom:45%;width:86%;aspect-ratio:3;pointer-events:none}
+.ceo-desk-props img{display:block;width:100%;height:auto}
+.ceo-desk-props i{position:absolute;left:87%;top:40%;width:9px;height:22px;border-left:2px solid #fff9;border-radius:50%;filter:blur(1px);opacity:.45;animation:steam 6s ease-in-out infinite}
+@media(max-width:900px){.ceo-desk-props{left:1%;width:96%;bottom:43%}.ceo-desk-props i{height:16px;top:37%}}
+@media(prefers-reduced-motion:reduce){.ceo-desk-props i{animation:none}}
