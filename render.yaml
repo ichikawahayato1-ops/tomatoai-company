@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: tomato-ai-company
+    runtime: docker
+    plan: starter
+    healthCheckPath: /api/health
+    envVars:
+      - key: APP_PASSWORD
+        generateValue: true
+      - key: TOMA_AI_KEY
+        sync: false
+      - key: TOMA_AI_MODEL
+        value: gpt-4.1-mini
+      - key: HOST
+        value: 0.0.0.0
+      - key: DATABASE_PATH
+        value: /app/data/company.sqlite3
+    disk:
+      name: company-data
+      mountPath: /app/data
+      sizeGB: 1

@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;600;700&display=swap');
+:root{font-family:'DM Sans','Noto Sans JP',sans-serif;color:#344e5c;background:#f7fafc}*{box-sizing:border-box}body{margin:0}button,a{-webkit-tap-highlight-color:transparent}button{font:inherit;cursor:pointer;border:0}button:focus-visible,[role=button]:focus-visible,a:focus-visible{outline:3px solid #58a9bd;outline-offset:5px}header{height:104px;padding:24px 6%;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #e7eef2;background:#fff}.brand{text-decoration:none;color:#344e5c;display:flex;gap:13px;align-items:center;font-size:21px;font-weight:700}.brand b{font-weight:400}.brand small{display:block;font-size:10px;color:#91a1ab;font-weight:400;letter-spacing:1px;margin-top:5px}.logo{width:47px;height:47px;display:grid;place-items:center;background:#fff0e9;color:#e78e79;border-radius:16px;font-size:35px}.owner{font-size:11px;letter-spacing:2px;color:#8c9da7}main{max-width:1240px;margin:auto;padding:38px 48px 24px}.intro{display:flex;align-items:center;justify-content:space-between}.eyebrow{font-size:10px;letter-spacing:3px;color:#87a8b7}h1{font-size:27px;font-weight:500;margin:11px 0 10px;letter-spacing:1px}.intro p{font-size:12px;color:#899aa6;margin:0}.mode{padding:10px 14px;background:white;border:1px solid #e7eff1;border-radius:30px;font-size:11px;display:flex;align-items:center;gap:8px}.mode i{width:6px;height:6px;background:#83b99e;border-radius:50%}.office-shell{position:relative;margin-top:25px;border:1px solid #e7eff3;border-radius:28px;background:radial-gradient(ellipse at 50% 40%,#fff 20%,#edf5f8 100%);overflow:hidden}.scene-wrap{max-width:1000px;margin:auto}svg{display:block;width:100%;height:auto;max-height:660px}.floor-label{font-size:10px;letter-spacing:2px;fill:#8b9faa}#camera{transform-origin:0 0;transition:transform .9s cubic-bezier(.2,.7,.25,1)}.employee{cursor:pointer;outline:none}.employee:focus-visible .person,.employee:hover .person{filter:drop-shadow(0 0 6px #fff)}.person{animation:breathe 3.4s ease-in-out infinite;animation-delay:var(--delay)}.eyes{transform-box:fill-box;transform-origin:center;animation:blink 5.6s infinite;animation-delay:var(--delay)}.employee[data-action=THINK] .person{animation:think 2.8s infinite}.employee[data-action=WORK] .arm{animation:type .5s infinite alternate}.employee[data-action=WALK] .person,.employee[data-action=DELIVER] .person{animation:walk .45s infinite alternate}.employee[data-action=CELEBRATE] .person{animation:happy .65s infinite alternate}.employee[data-action=REJECT] .head{animation:shake .55s 3}.employee[data-action=SLEEP] .eyes{transform:scaleY(.15);animation:none}.employee[data-action=DRINK] .arm{transform:rotate(-22deg)}.employee[data-action=READ] .paper,.employee[data-action=DELIVER] .paper{opacity:1}.paper{opacity:0}.employee-name{font-size:12px;fill:#647e8c;font-weight:600}.bubble{font-size:14px}.scene-caption{display:flex;gap:16px;align-items:center;justify-content:center;padding:12px 16px 23px;font-size:11px;color:#94a6b1}.scene-caption button{background:#fff;border:1px solid #e1ebef;border-radius:20px;color:#688391;padding:8px 12px}aside{position:absolute;top:28px;right:25px;width:250px;padding:24px;background:#ffffffed;backdrop-filter:blur(12px);border:1px solid #e4edf0;border-radius:22px;box-shadow:0 14px 40px #66859912}aside h2{margin:8px 0 3px;font-size:24px}aside p{font-size:12px;line-height:1.9;color:#8294a0}.tag{font-size:9px;letter-spacing:2px;color:#75a19d}.task{border-top:1px solid #eaf0f3;padding-top:16px;margin-top:18px;font-size:13px}progress{width:100%;height:6px;appearance:none;margin:14px 0 4px}progress::-webkit-progress-bar{background:#ecf2f5;border-radius:8px}progress::-webkit-progress-value{background:#8dbab2;border-radius:8px}.meta{display:flex;justify-content:space-between;font-size:10px;color:#899ba5}.close{position:absolute;right:12px;top:10px;background:none;color:#8397a2;font-size:20px}footer{display:flex;justify-content:space-between;gap:20px;align-items:center;padding:24px 4px;font-size:11px;color:#8fa1aa}footer div{display:flex;align-items:center;gap:22px}#demo{background:#3f626c;color:#fff;padding:12px 17px;border-radius:12px;font-size:11px}#demo:disabled{opacity:.5;cursor:default}.disclaimer{text-align:center;font-size:9px;letter-spacing:1px;color:#a1afb8;margin:4px 0}ul{padding-left:18px;font-size:12px;line-height:2;color:#718892}[hidden]{display:none!important}@keyframes breathe{50%{transform:translateY(-3px) rotate(1deg)}}@keyframes blink{0%,43%,47%,100%{transform:scaleY(1)}45%{transform:scaleY(.08)}}@keyframes think{50%{transform:rotate(-5deg) translateY(-2px)}}@keyframes type{to{transform:translateY(-4px)}}@keyframes walk{to{transform:translateY(-5px) rotate(4deg)}}@keyframes happy{to{transform:translateY(-10px)}}@keyframes shake{25%{transform:translateX(-3px)}75%{transform:translateX(3px)}}@media(max-width:760px){header{height:82px;padding:18px 22px}.brand{font-size:17px}.owner{font-size:8px;letter-spacing:1px}main{padding:26px 14px}h1{font-size:21px}.intro{gap:10px}.mode{font-size:9px;padding:8px}.office-shell{margin-top:24px;border-radius:20px}aside{position:relative;top:auto;right:auto;width:calc(100% - 24px);margin:0 12px 12px}.scene-caption{flex-wrap:wrap;font-size:9px}footer{align-items:flex-start;flex-direction:column}footer div{width:100%;justify-content:space-between;gap:12px}#activity{max-width:55%;line-height:1.8}.disclaimer{font-size:8px;line-height:1.8}}@media(prefers-reduced-motion:reduce){*,.person,.eyes{animation:none!important;transition:none!important}}
+
+.paused .person,.paused .eyes,.paused .arm,.paused .head{animation-play-state:paused!important}
+
+/* Soft miniature materials and quiet signs of office life. */
+.office-shell{background:radial-gradient(ellipse at 48% 25%,#fffdf6 0%,#f2f8fa 60%,#eaf3f5 100%)}
+.employee-name{font-size:11px;fill:#627e88;letter-spacing:.3px}
+.steam{animation:steam 3s ease-in-out infinite;transform-origin:center;opacity:.7}
+@keyframes steam{0%{opacity:0;transform:translateY(2px)}50%{opacity:.65}100%{opacity:0;transform:translateY(-6px)}}
+.paused .steam{animation-play-state:paused}
+
+/* State-driven work gestures; small movements keep TOMA's material believable. */
+.work-kit,.read-kit,.coffee-kit{display:none}
+.employee[data-action=WORK] .work-kit,.employee[data-action=THINK] .work-kit{display:block}
+.employee[data-action=READ] .read-kit,.employee[data-action=REVIEW] .read-kit{display:block}
+.employee[data-action=DRINK] .coffee-kit{display:block;animation:sip 7s ease-in-out infinite;transform-origin:29px 7px}
+.employee[data-action=READ] .paper{opacity:0}
+.employee[data-action=WORK] .person{animation:working-breath 3.6s ease-in-out infinite}
+.employee[data-action=WORK] .typing-hand{animation:typing .45s ease-in-out infinite alternate}
+.employee[data-action=WORK] .typing-hand.right{animation-delay:.22s}
+.employee[data-action=READ] .person{animation:reading 5s ease-in-out infinite}
+.employee[data-action=REVIEW] .person{animation:review-nod 3s ease-in-out infinite}
+.employee[data-action=REJECT] .person{animation:gentle-no 2s ease-in-out infinite}
+.employee[data-action=DELIVER] .person{animation:working-breath 3.6s ease-in-out infinite}
+.employee[data-moving=true] .person{animation:small-steps .55s ease-in-out infinite!important}
+.employee[data-action=CELEBRATE] .person{animation:little-joy 1.4s ease-in-out infinite}
+.work-label{font-size:9px;fill:#8b9b9d;letter-spacing:.5px}
+@keyframes working-breath{50%{transform:translateY(-1.2px) rotate(.5deg)}}
+@keyframes typing{to{transform:translateY(-2.5px)}}
+@keyframes reading{0%,100%{transform:rotate(0)}35%,60%{transform:translateY(1px) rotate(-2deg)}}
+@keyframes review-nod{0%,60%,100%{transform:translateY(0)}70%,85%{transform:translateY(2px) scaleY(.985)}}
+@keyframes gentle-no{25%{transform:rotate(-2deg)}75%{transform:rotate(2deg)}}
+@keyframes small-steps{0%,100%{transform:translateY(0) rotate(-1deg)}50%{transform:translateY(-2px) rotate(1deg)}}
+@keyframes little-joy{0%,100%{transform:translateY(0)}35%{transform:translateY(-4px) rotate(-2deg)}65%{transform:translateY(-2px) rotate(2deg)}}
+@keyframes sip{0%,20%,80%,100%{transform:translate(0,0)}40%,60%{transform:translate(-10px,-17px) rotate(-12deg)}}
+.paused .typing-hand,.paused .coffee-kit{animation-play-state:paused!important}
+@media(prefers-reduced-motion:reduce){.employee .person,.typing-hand,.coffee-kit{animation:none!important}}
+
+/* Work remains visible at the desk; hide equipment only while travelling. */
+.employee[data-action=READ] .work-kit{display:block}
+.employee[data-action=READ] .read-kit{transform:translate(31px,-14px) scale(.48)}
+.employee[data-action=THINK] .typing-hand{animation:typing .8s ease-in-out infinite alternate}
+.employee[data-moving=true] .work-kit,.employee[data-moving=true] .read-kit,.employee[data-moving=true] .coffee-kit{display:none}
+.employee[data-moving=true][data-direction=left] .toma-sprite{transform:skewY(2deg);transform-origin:0 20px}
+.employee[data-moving=true][data-direction=right] .toma-sprite{transform:skewY(-2deg);transform-origin:0 20px}
+.employee[data-action=WORK] .toma-sprite,.employee[data-action=THINK] .toma-sprite{transform:translateY(2px) scaleY(.97);transform-origin:0 20px}
+@media(prefers-reduced-motion:reduce){.employee[data-action=THINK] .typing-hand{animation:none!important}}
+
+/* Real directional sprites instead of always looking at the owner. */
+.toma-side,.toma-back,.walking-hands{display:none}
+.employee[data-facing=back] .toma-front,.employee[data-facing=left] .toma-front,.employee[data-facing=right] .toma-front{display:none}
+.employee[data-facing=back] .toma-back,.employee[data-facing=left] .toma-side,.employee[data-facing=right] .toma-side{display:block}
+.employee[data-facing=right] .toma-side{transform:scaleX(-1);transform-origin:0px 0px;transform-box:view-box}
+.employee[data-facing=back] .work-kit{transform:translateY(-23px) scale(.88);transform-origin:0 0}
+.employee[data-facing=back] .toma-art{transform:translateY(3px)}
+.employee[data-moving=true] .walking-hands{display:block}
+.swing-left{animation:arm-swing .5s ease-in-out infinite alternate;transform-origin:-29px 0px}
+.swing-right{animation:arm-swing .5s ease-in-out infinite alternate-reverse;transform-origin:29px 0px}
+.employee[data-moving=true] .person{animation:walking-stride .5s ease-in-out infinite!important}
+.employee[data-action=WORK] .person{animation:desk-work 2.4s ease-in-out infinite}
+.employee[data-action=THINK] .person{animation:desk-think 4s ease-in-out infinite}
+.employee[data-action=READ] .person{animation:page-reading 3.8s ease-in-out infinite}
+.employee[data-action=REVIEW] .person{animation:review-nod 1.8s ease-in-out infinite}
+.monitor-screen{animation:screen-light 4s ease-in-out infinite}
+@keyframes arm-swing{from{transform:translateY(-4px) rotate(-12deg)}to{transform:translateY(4px) rotate(12deg)}}
+@keyframes walking-stride{0%,100%{transform:translateY(0) rotate(-2deg)}25%{transform:translateY(-4px)}50%{transform:translateY(0) rotate(2deg)}75%{transform:translateY(-4px)}}
+@keyframes desk-work{0%,100%{transform:translateY(1px) rotate(-1deg)}30%{transform:translateY(3px) rotate(1deg)}60%{transform:translateY(0) rotate(-.5deg)}}
+@keyframes desk-think{0%,100%{transform:rotate(0)}35%,65%{transform:rotate(-4deg) translateY(-2px)}}
+@keyframes page-reading{0%,100%{transform:rotate(0)}40%{transform:rotate(-3deg) translateY(2px)}70%{transform:rotate(2deg)}}
+@keyframes screen-light{50%{fill:#c9eaf2}}
+.paused .swing-left,.paused .swing-right,.paused .monitor-screen{animation-play-state:paused!important}
+@media(prefers-reduced-motion:reduce){.employee[data-moving=true] .person,.swing-left,.swing-right,.monitor-screen{animation:none!important}}
+.toma-side,.toma-back{width:104px;height:127px;max-height:none}
+
+.employee[data-action=WORK] .walking-hands,.employee[data-action=THINK] .walking-hands{display:block;transform:translateY(-10px)}
+.employee[data-moving=false][data-action=WORK] .swing-left,.employee[data-moving=false][data-action=WORK] .swing-right{animation:typing .35s ease-in-out infinite alternate}
+
+/* Subtle screen light preserves dark glass instead of a flashing flat panel. */
+@keyframes screen-light{50%{opacity:.8}}
+
+/* A dedicated seated sprite has bent legs, a supported torso and a real chair. */
+.seated-toma{display:none}
+.employee[data-seated=true] .seated-toma{display:block}
+.employee[data-seated=true] .toma-art,.employee[data-seated=true] .walking-hands,.employee[data-seated=true] .work-kit{display:none}
+.employee[data-seated=true] .person{animation:seated-work 3.5s ease-in-out infinite;transform-origin:0 22px}
+.employee[data-seated=true][data-action=THINK] .person{animation:seated-think 5s ease-in-out infinite}
+.employee[data-seated=true] .read-kit{transform:translate(28px,-20px) scale(.4)}
+.employee[data-seated=true] .coffee-kit{transform:translate(5px,-15px)}
+@keyframes seated-work{0%,100%{transform:rotate(-.5deg)}40%{transform:rotate(.7deg)}65%{transform:rotate(-.2deg)}}
+@keyframes seated-think{0%,100%{transform:rotate(0)}35%,65%{transform:rotate(-1.5deg)}}
+@media(prefers-reduced-motion:reduce){.employee[data-seated=true] .person{animation:none!important}}
+/* Give the office more room on desktop without changing its interactions. */
+@media(min-width:761px){
+ main{max-width:1600px;padding:32px 28px 24px}
+ .scene-wrap{max-width:1400px}
+ #office{max-height:none}
+ .office-shell{margin-top:20px}
+}
+
+/* A wider floor plan adds distinct rooms instead of enlarging existing objects. */
+@media(min-width:761px){.scene-wrap{max-width:1544px}}
+.zone-labels{pointer-events:none;opacity:.85}
+
+/* More readable animated gestures, still driven by the current action. */
+.speed-lines,.work-spark{opacity:0}
+.employee[data-moving=true] .speed-lines{animation:travel-lines .55s ease-in-out infinite}
+.employee[data-action=WORK] .work-spark,.employee[data-action=THINK] .work-spark{animation:idea-spark 2.8s ease-in-out infinite}
+.employee[data-action=READ] .read-kit{animation:book-turn 2.6s ease-in-out infinite;transform-origin:0 10px}
+.employee[data-action=DRINK] .coffee-kit{animation:sip 4s ease-in-out infinite}
+.employee[data-moving=true] .person{animation:walking-stride .42s ease-in-out infinite!important}
+.employee[data-seated=true][data-action=WORK] .person{animation:busy-seat 1.8s ease-in-out infinite;transform-origin:0 22px}
+.employee[data-seated=true][data-action=THINK] .person{animation:seated-think 3s ease-in-out infinite}
+@keyframes walking-stride{0%,100%{transform:translateY(0) rotate(-3deg)}25%{transform:translateY(-5px) rotate(-1deg)}50%{transform:translateY(0) rotate(3deg)}75%{transform:translateY(-5px) rotate(1deg)}}
+@keyframes travel-lines{0%,100%{opacity:.15;transform:translateX(2px)}50%{opacity:.6;transform:translateX(-4px)}}
+@keyframes idea-spark{0%,65%,100%{opacity:0;transform:translateY(0)}75%,85%{opacity:.75;transform:translateY(-4px)}}
+@keyframes book-turn{0%,100%{transform:translate(28px,-20px) scale(.48) rotate(-5deg)}50%{transform:translate(28px,-23px) scale(.48) rotate(5deg)}}
+@keyframes busy-seat{0%,100%{transform:rotate(-1deg)}25%{transform:translateY(-1px) rotate(1deg)}55%{transform:rotate(-1.5deg)}75%{transform:rotate(1deg)}}
+.paused .motion-effects *,.paused .read-kit{animation-play-state:paused!important}
+@media(prefers-reduced-motion:reduce){.employee[data-moving=true] .person,.motion-effects *,.read-kit{animation:none!important}}
+
+/* Articulated sprite limbs: matching textured feet and arms, not extra drawn hands. */
+.walking-limb{display:none}
+.employee[data-moving=true] .walking-limb{display:block}
+.employee[data-moving=true] .main-body{clip-path:var(--body-clip)}
+.employee[data-moving=true] .walking-hands{display:none}
+.employee[data-moving=true] .leftFoot{animation:step-left .56s linear infinite;transform-origin:-12px 16px}
+.employee[data-moving=true] .rightFoot{animation:step-right .56s linear infinite;transform-origin:12px 16px}
+.employee[data-moving=true] .leftArm{animation:limb-swing .56s ease-in-out infinite;transform-origin:-23px -10px}
+.employee[data-moving=true] .rightArm{animation:limb-swing .56s ease-in-out infinite reverse;transform-origin:23px -10px}
+.employee[data-moving=true][data-facing=left] .leftFoot,.employee[data-moving=true][data-facing=left] .rightFoot{--stride:-1}
+.employee[data-moving=true]{--stride:1}
+.employee[data-moving=true] .person{animation:walk-weight .56s ease-in-out infinite!important}
+@keyframes step-left{0%,100%{transform:translate(0,0) rotate(0)}25%{transform:translate(calc(5px * var(--stride)), -5px) rotate(-14deg)}50%{transform:translate(calc(7px * var(--stride)),0) rotate(0)}75%{transform:translate(calc(-3px * var(--stride)),0) rotate(7deg)}}
+@keyframes step-right{0%,100%{transform:translate(calc(7px * var(--stride)),0) rotate(0)}25%{transform:translate(calc(-3px * var(--stride)),0) rotate(7deg)}50%{transform:translate(0,0) rotate(0)}75%{transform:translate(calc(5px * var(--stride)),-5px) rotate(-14deg)}}
+@keyframes limb-swing{0%,100%{transform:rotate(-14deg) translateY(2px)}50%{transform:rotate(14deg) translateY(-2px)}}
+@keyframes walk-weight{0%,50%,100%{transform:translateY(0)}25%{transform:translateY(-2px) rotate(-1deg)}75%{transform:translateY(-2px) rotate(1deg)}}
+.paused .walking-limb{animation-play-state:paused!important}
+@media(prefers-reduced-motion:reduce){.walking-limb,.employee[data-moving=true] .person{animation:none!important}}
+
+/* Four actual walking poses make the mascot feel like a little life-sim resident. */
+.walk-cycle{display:none}
+.walk-frames{width:110px;height:132px;background-image:url(assets/toma-walk-cycle.png);background-size:220px 264px;animation:toma-walk-frames .8s steps(1,end) infinite}
+.employee[data-moving=true]:not([data-facing=back]) .walk-cycle{display:block}
+.employee[data-moving=true]:not([data-facing=back]) .main-body,.employee[data-moving=true]:not([data-facing=back]) .walking-limb{display:none}
+.employee[data-facing=left] .walk-cycle{transform:scaleX(-1);transform-origin:0 0}
+.employee[data-moving=true] .speed-lines{display:none}
+@keyframes toma-walk-frames{0%,100%{background-position:0 0}25%{background-position:-110px 0}50%{background-position:0 -132px}75%{background-position:-110px -132px}}
+.paused .walk-frames{animation-play-state:paused!important}
+@media(prefers-reduced-motion:reduce){.walk-frames{animation:none!important}}
+
+/* Each employee has a recognizable work gesture and a two-sided handoff. */
+.received-document{display:none}
+.employee[data-role=research][data-seated=true] .person{animation:research-scan 3s ease-in-out infinite}
+.employee[data-role=analyst][data-seated=true] .person{animation:seated-think 3.4s ease-in-out infinite}
+.employee[data-role=creator][data-seated=true] .person{animation:busy-seat 1.2s ease-in-out infinite}
+.employee[data-role=critic][data-seated=true] .person{animation:review-nod 2.1s ease-in-out infinite}
+.employee[data-role=ceo][data-seated=true] .person{animation:ceo-check 4s ease-in-out infinite}
+.employee[data-giving=true] .arm{transform:translateX(12px) rotate(-8deg);transition:transform .35s ease}
+.employee[data-giving=true] .person{animation:hand-over 1.2s ease-in-out infinite}
+.employee[data-receiving=true] .received-document{display:block;animation:receive-paper 1s ease-out both}
+.employee[data-receiving=true] .person{animation:review-nod .8s ease-in-out infinite}
+@keyframes research-scan{0%,100%{transform:rotate(-1deg)}35%{transform:rotate(2deg)}70%{transform:rotate(-2deg) translateY(-1px)}}
+@keyframes ceo-check{0%,100%{transform:rotate(0)}25%{transform:rotate(-1.5deg)}60%{transform:translateY(1px) rotate(1deg)}}
+@keyframes hand-over{50%{transform:translateX(3px) rotate(2deg)}}
+@keyframes receive-paper{from{opacity:0;transform:translateX(-10px)}to{opacity:1;transform:translateX(0)}}
+.paused .received-document{animation-play-state:paused!important}
+@media(prefers-reduced-motion:reduce){.received-document{animation:none!important}}
+
+/* Skeletal 3D replaces sprite gestures; keep labels and interaction overlays. */
+.model-3d{display:none;pointer-events:none}
+.employee.has-3d .model-3d{display:block}
+.employee.has-3d .toma-art,.employee.has-3d .seated-toma,.employee.has-3d .walk-cycle,.employee.has-3d .walking-limb,.employee.has-3d .walking-hands,.employee.has-3d .work-kit{display:none!important}
+.employee.has-3d .person{animation:none!important;transform:none!important}
+.model-3d canvas{display:block;width:140px!important;height:170px!important}
+
+/* The articulated model carries its own work tools. */
+.employee.has-3d .role-prop,.employee.has-3d .read-kit,.employee.has-3d .coffee-kit,.employee.has-3d .received-document,.employee.has-3d .arm{display:none}
+.employee.has-3d .bubble{font-size:11px;paint-order:stroke;stroke:#fffaf1;stroke-width:4px;stroke-linejoin:round}
+
+/* Preserve the illustrated TOMA rather than rebuilding its face in geometry. */
+.employee.original-toma .role-prop{display:none}
+.employee.original-toma .bubble{font-size:11px;paint-order:stroke;stroke:#fffaf1;stroke-width:4px}
+.employee.original-toma .walk-cycle{display:none!important}
+.employee.original-toma[data-moving=true] .main-body,.employee.original-toma[data-moving=true] .walking-limb{display:block!important}
+.employee.original-toma[data-moving=true] .person{animation:walk-weight 1.25s ease-in-out infinite!important}
+.employee.original-toma[data-moving=true] .walking-limb{animation-duration:1.25s}
+.employee.original-toma[data-seated=true] .person{animation-duration:4.5s}
+.employee.original-toma .typing-hand{animation-duration:1.8s}
+.employee.original-toma .read-kit{animation-duration:5s}
+.employee.original-toma .coffee-kit{animation-duration:8s}
+.employee.original-toma[data-giving=true] .person{animation-duration:2.4s}
+
+/* Warm little conversations, legible above the office scene. */
+.employee.original-toma .bubble{display:none}
+.speech-layer{pointer-events:none}
+.speech-card{filter:drop-shadow(0 3px 4px #667c8a20)}
+.speech-bg,.speech-tail{fill:#fffcf5;stroke:#e9d9c8;stroke-width:1.2;stroke-linejoin:round}
+.speech-status{font-size:9px;fill:#a08b7d;font-weight:500}
+.speech-line{font-size:11px;fill:#6c5750;font-weight:600;letter-spacing:.15px}
+
+/* Expression assets keep TOMA's original face; effects follow the actual state. */
+.sleep-art{display:none}
+.sleep-frames{width:116px;height:116px;background:url(assets/toma-sleep.png) 0 0 / 232px 116px no-repeat}
+.employee[data-action=SLEEP] .sleep-frames{background-position:-116px 0}
+.employee:not([data-moving=true])[data-action=SLEEP] .sleep-art,.employee:not([data-moving=true])[data-action=SLEEPY] .sleep-art{display:block}
+.employee:not([data-moving=true])[data-action=SLEEP] .toma-art,.employee:not([data-moving=true])[data-action=SLEEPY] .toma-art{display:none}
+.employee.original-toma:not([data-moving=true])[data-action=SLEEP] .person{animation:sleep-breathe 5s ease-in-out infinite!important;transform-origin:0 18px}
+.employee.original-toma:not([data-moving=true])[data-action=SLEEPY] .person{animation:sleepy-nod 5s ease-in-out infinite!important;transform-origin:0 18px}
+.character-fx{pointer-events:none}
+.character-fx>g{display:none}
+.employee:not([data-moving=true])[data-action=SLEEP] .fx-sleep,.employee:not([data-moving=true])[data-action=SLEEPY] .fx-sleepy,.employee:not([data-moving=true])[data-action=THINK] .fx-idea,.employee:not([data-moving=true])[data-action=REJECT] .fx-worry,.employee:not([data-moving=true])[data-action=CELEBRATE] .fx-happy{display:block}
+.fx-sleep text{fill:#8faee0;font-size:17px;font-weight:700;animation:sleep-z 4s ease-in-out infinite}
+.fx-sleep text:nth-child(2){animation-delay:1s}.fx-sleep text:nth-child(3){animation-delay:2s;font-size:20px}
+.fx-sleepy{fill:#9ab0c8;stroke:#9ab0c8;stroke-width:1.5;animation:sleepy-sigh 5s ease-in-out infinite}
+.fx-sleepy path{fill:none}.fx-sleepy text{font-size:20px;stroke:none}
+.fx-idea{fill:#fff0a4;stroke:#e6b756;stroke-width:2;stroke-linecap:round;animation:idea-glow 6s ease-in-out infinite}
+.fx-worry{fill:#aaceda;stroke:#aaceda;stroke-width:1.5;animation:worry-float 3s ease-in-out infinite}
+.fx-worry text{fill:#9c91c5;stroke:none;font-size:25px;font-weight:600}
+.fx-happy{fill:#e9b963;font-size:20px;animation:happy-spark 3s ease-in-out infinite}.fx-happy text:nth-child(2){fill:#edaaa8}
+.paused .character-fx *,.paused .character-fx>g{animation-play-state:paused!important}
+@keyframes sleep-breathe{50%{transform:scale(1.025,.99)}}
+@keyframes sleepy-nod{0%,100%{transform:rotate(0)}45%,65%{transform:rotate(4deg) translateY(2px)}}
+@keyframes sleep-z{0%{opacity:0;transform:translateY(5px)}35%,65%{opacity:.9}100%{opacity:0;transform:translateY(-12px)}}
+@keyframes sleepy-sigh{0%,100%{opacity:.3}50%{opacity:.9;transform:translateY(-3px)}}
+@keyframes idea-glow{0%,45%,100%{opacity:.15}55%,80%{opacity:1;filter:drop-shadow(0 0 4px #f8d66c)}}
+@keyframes worry-float{50%{transform:translateY(-3px) rotate(3deg)}}
+@keyframes happy-spark{0%,100%{opacity:.4}50%{opacity:1;transform:translateY(-4px)}}
+@media(prefers-reduced-motion:reduce){.employee.original-toma .person,.character-fx *,.character-fx>g{animation:none!important}}
+
+/* Full illustrated expression variants, shown only when the face is visible. */
+.expression-art{display:none}
+.expression-frames{width:144px;height:144px;background:url(assets/toma-expressions.png) 0 0 / 432px 288px no-repeat}
+.employee[data-expression=focused] .expression-frames{background-position:-144px 0}
+.employee[data-expression=discovery] .expression-frames{background-position:-288px 0}
+.employee[data-expression=happy] .expression-frames{background-position:0 -144px}
+.employee[data-expression=worried] .expression-frames{background-position:-144px -144px}
+.employee[data-expression=tired] .expression-frames{background-position:-288px -144px}
+.employee.original-toma[data-facing=front]:not([data-moving=true]):not([data-seated=true]):not([data-action=SLEEP]):not([data-action=SLEEPY]) .expression-art{display:block}
+.employee.original-toma[data-facing=front]:not([data-moving=true]):not([data-seated=true]):not([data-action=SLEEP]):not([data-action=SLEEPY]) .toma-art{display:none}
+.employee.original-toma[data-action=CELEBRATE] .person{animation:gentle-cheer 3s ease-in-out infinite}
+@keyframes gentle-cheer{50%{transform:translateY(-3px) rotate(1deg)}}
+/* TOMA's private, desk-level conversation view. */
+.ceo-heading{display:flex;align-items:center;justify-content:space-between;margin-bottom:22px;gap:16px}.ceo-heading button{background:#fff;padding:11px 16px;border:1px solid #e6e4dc;border-radius:20px;color:#6b7773}.ceo-heading>span{font-size:10px;color:#969b8e;letter-spacing:2px}
+.ceo-layout{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(300px,1fr);gap:24px;min-height:610px}.ceo-room{position:relative;overflow:hidden;border-radius:28px;background:radial-gradient(ellipse at 30% 20%,#fff9e7,transparent 65%),linear-gradient(120deg,#f1e5d1,#e7e0d2 60%,#d8ded0);isolation:isolate;min-height:610px;box-shadow:inset 0 0 70px #bba58522}.ceo-window{position:absolute;left:6%;top:10%;width:33%;height:52%;border:12px solid #faf2e5;background:linear-gradient(135deg,#c8e4df,#f6f5d6);box-shadow:8px 10px 30px #ad9f8620,inset 0 0 18px #9ebdc033;border-radius:6px;opacity:.75}.ceo-window:before,.ceo-window:after{content:'';position:absolute;background:#faf2e5}.ceo-window:before{left:47%;width:7px;height:100%}.ceo-window:after{top:48%;height:7px;width:100%}.ceo-books{position:absolute;right:6%;top:33%;width:21%;height:140px;display:flex;align-items:end;gap:7px;border-bottom:10px solid #c0aa8b;filter:blur(1px);opacity:.55}.ceo-books i{width:22%;height:80%;background:#9aad99;border-radius:5px 5px 0 0;box-shadow:inset 3px 0 #ffffff44}.ceo-books i:nth-child(2){height:95%;background:#b7a391}.ceo-books i:nth-child(3){height:72%;background:#96acb5}.ceo-books i:nth-child(4){height:88%;background:#c6b889}.ceo-room-label{position:absolute;top:32px;left:32px;font-size:10px;color:#8f927d;letter-spacing:3px}.ceo-room-label small{display:block;letter-spacing:1px;margin-top:8px;font-size:10px;color:#a2a38f}
+.ceo-portrait{position:absolute;left:50%;bottom:112px;width:min(94%,480px);aspect-ratio:1;transform:translateX(-50%);z-index:2;animation:ceo-breathe 7s ease-in-out infinite;transform-origin:50% 90%}.ceo-portrait-art{position:absolute;inset:0;background:url(assets/toma-ceo.png) 0 0 / 200% 200% no-repeat;transition:filter .4s}.ceo-room[data-mode=thinking] .ceo-portrait-art{background-position:100% 0}.ceo-room[data-mode=replying] .ceo-portrait-art{background-position:0 100%}.ceo-room.is-blinking .ceo-portrait-art{background-position:100% 100%}.ceo-room[data-mode=thinking] .ceo-portrait{animation:ceo-think 7s ease-in-out infinite}.ceo-room[data-mode=replying] .ceo-portrait{animation:ceo-reply 5s ease-in-out infinite}
+.ceo-desk{position:absolute;bottom:0;height:160px;width:100%;z-index:3;background:linear-gradient(175deg,#e8d5b8,#d7bc96 55%,#c5a57d);box-shadow:0 -4px 12px #a5886c22,inset 0 5px #fbecd488}.ceo-desk:after{content:'';position:absolute;inset:0;opacity:.2;background:repeating-linear-gradient(0deg,transparent 0 16px,#aa88644d 17px,transparent 18px)}.ceo-laptop{position:absolute;left:10%;top:-27px;width:42%;height:108px;transform:perspective(600px) rotateX(-10deg) rotateY(12deg);border:3px solid #b9b9b1;border-radius:9px;background:linear-gradient(140deg,#d3d3ca,#b2b7b0);box-shadow:4px 9px 8px #705c4833;z-index:1;display:grid;place-items:center}.ceo-laptop span{color:#919c90;font-size:30px}.ceo-cup{position:absolute;right:13%;top:16px;width:60px;height:61px;border-radius:5px 5px 23px 23px;display:grid;place-items:center;color:#dc947d;font-size:29px;background:linear-gradient(100deg,#fffdf2,#e7dfcd);box-shadow:4px 6px 7px #97765530;z-index:1}.ceo-cup:before{content:'';position:absolute;top:-5px;width:60px;height:12px;border-radius:50%;background:#8e7057;border:4px solid #fbf6e8}.ceo-cup:after{content:'';position:absolute;right:-20px;top:8px;width:22px;height:29px;border:7px solid #eee6d5;border-radius:50%;z-index:-1}.ceo-cup i{position:absolute;top:-39px;left:23px;width:10px;height:30px;border-left:2px solid #fffc;filter:blur(1px);border-radius:50%;animation:steam 5s infinite}.ceo-notebook{position:absolute;right:27%;top:86px;width:83px;height:39px;border-radius:3px;transform:rotate(-10deg);background:#f5f0e6;box-shadow:0 4px #b4bda8}.ceo-presence{position:absolute;bottom:21px;left:50%;transform:translateX(-50%);z-index:4;white-space:nowrap;display:flex;align-items:center;gap:8px;padding:10px 17px;border-radius:20px;background:#fffcf0ee;font-size:12px;color:#887b6b;box-shadow:0 3px 12px #8b6b4820}.ceo-presence i{width:6px;height:6px;border-radius:50%;background:#9cbaa0}
+.ceo-conversation{display:flex;flex-direction:column;min-width:0;background:#fffdf8;border:1px solid #eee8de;border-radius:28px;padding:32px}.ceo-eyebrow{font-size:9px;letter-spacing:3px;color:#a8b2a0}.ceo-conversation h2{font-size:29px;color:#5f7567;margin:10px 0}.ceo-conversation h2 small{display:inline-block;font-size:10px;font-weight:400;color:#a0a393;margin-left:10px}.ceo-welcome{font-size:13px;line-height:1.9;color:#9b998c;margin:4px 0 20px}#ceo-messages{flex:1;min-height:150px;max-height:290px;overflow:auto;padding-right:6px;scroll-behavior:smooth}.ceo-message{font-size:13px;line-height:1.9;white-space:pre-wrap;padding:15px 17px;border-radius:18px;max-width:92%;margin:0 0 15px;color:#72766a}.ceo-message.toma{background:#edf2e8;border-bottom-left-radius:4px}.ceo-message.owner{background:#f7ede5;margin-left:auto;border-bottom-right-radius:4px;color:#9b806e}.ceo-suggestions{display:flex;flex-wrap:wrap;gap:7px;margin:18px 0}.ceo-suggestions button{font-size:10px;padding:8px 11px;background:#fffdf8;border:1px solid #e5e7dc;border-radius:16px;color:#909783}.ceo-suggestions button:disabled{opacity:.45;cursor:default}#ceo-form label{display:block;font-size:10px;color:#a3a594;margin-bottom:8px}#ceo-form>div{display:flex;align-items:end;gap:8px;background:#f8f8f0;border:1px solid #e5e7da;border-radius:16px;padding:9px}#ceo-input{font:inherit;font-size:12px;line-height:1.8;color:#687764;resize:vertical;max-height:120px;min-height:52px;min-width:0;width:100%;border:0;background:none;outline:none}#ceo-input:focus-visible{outline:2px solid #aabda0;outline-offset:2px;border-radius:6px}#ceo-input::placeholder{color:#b0b2a0}#ceo-form button{flex:none;width:35px;height:35px;border-radius:12px;background:#9aaf92;color:#fff;font-size:22px}#ceo-form button:disabled{opacity:.5}.ceo-demo-note{font-size:9px;line-height:1.7;color:#b4b1a2;margin:12px 0 0}
+@keyframes ceo-breathe{0%,100%{transform:translateX(-50%) scale(1)}50%{transform:translateX(-50%) scale(1.012) translateY(-2px)}}@keyframes ceo-think{0%,100%{transform:translateX(-50%) rotate(-.5deg)}50%{transform:translateX(-50%) rotate(1deg) translateY(-2px)}}@keyframes ceo-reply{0%,100%{transform:translateX(-50%) rotate(0)}50%{transform:translateX(-50%) translateY(-3px) rotate(-1deg)}}
+@media(max-width:900px){.ceo-layout{grid-template-columns:1fr}.ceo-room{min-height:470px}.ceo-portrait{width:min(90%,370px)}.ceo-conversation{padding:24px}.ceo-heading>span{letter-spacing:.5px;font-size:9px}.ceo-heading button{font-size:11px}#ceo-messages{max-height:260px}}
+@media(prefers-reduced-motion:reduce){.ceo-portrait,.ceo-cup i{animation:none!important}}
+/* A softly lit office plate gives the private room depth and material detail. */
+.ceo-room{background:#e8e3d3 url(assets/ceo-office.png) center / 100% 100% no-repeat;box-shadow:inset 0 0 40px #9b8c6b15}
+.ceo-window,.ceo-books{display:none}
+.ceo-room-label{color:#7b816d;text-shadow:0 1px 5px #fffdf1}.ceo-room-label small{color:#89917c}
+.ceo-desk{height:22%;background:transparent;box-shadow:none}.ceo-desk:after{display:none}
+.ceo-portrait{bottom:calc(22% - 36px)}
+
+/* A thin aluminum notebook with a tomato silhouette on its lid. */
+.ceo-laptop{left:8%;top:-46px;width:43%;height:clamp(110px,12vw,155px);border:1.5px solid #c2c7ca;border-radius:12px;background:linear-gradient(125deg,#e5e8e9 0%,#d0d5d8 37%,#bfc6cb 100%);box-shadow:inset 0 1px 2px #ffffffcc,inset 0 -2px 2px #98a2a744,5px 9px 12px #66533d35;transform:perspective(700px) rotateX(-8deg) rotateY(10deg)}
+.ceo-laptop:before{content:'';position:absolute;left:-6px;bottom:-9px;width:calc(100% + 12px);height:9px;background:linear-gradient(#dfe4e6,#a3adb4);border:1px solid #b1b9bd;border-radius:1px 1px 9px 9px;box-shadow:0 3px 3px #66533d24}
+.ceo-laptop:after{content:'';position:absolute;bottom:-4px;left:42%;width:16%;height:3px;border-radius:0 0 4px 4px;background:#939fa6}
+.ceo-tomato-logo{width:38px;height:38px;fill:#899499;filter:drop-shadow(0 1px 0 #f7fafba0)}
+@media(max-width:900px){.ceo-laptop{top:-37px;height:110px}.ceo-tomato-logo{width:30px;height:30px}}
+
+/* Portrait expressions share TOMA's illustrated face and proportions. */
+.ceo-emotion-art{display:none;position:absolute;inset:0;background:url(assets/toma-ceo-emotions.png) 0 0 / 300% 200% no-repeat}
+.ceo-room[data-emotion] .ceo-emotion-art{display:block}.ceo-room[data-emotion] .ceo-portrait-art{visibility:hidden}
+.ceo-room[data-emotion=excited] .ceo-emotion-art{background-position:50% 0}.ceo-room[data-emotion=focused] .ceo-emotion-art{background-position:100% 0}.ceo-room[data-emotion=worried] .ceo-emotion-art{background-position:0 100%}.ceo-room[data-emotion=shy] .ceo-emotion-art{background-position:50% 100%}.ceo-room[data-emotion=sleepy] .ceo-emotion-art{background-position:100% 100%}
+.ceo-emotions{margin:0 0 15px;font-size:11px;color:#a0a38e}.ceo-emotions summary{cursor:pointer;list-style:none;display:inline-block;border-bottom:1px dashed #d6dccb;padding-bottom:3px}.ceo-emotions summary::-webkit-details-marker{display:none}.ceo-emotions>div{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}.ceo-emotions button{border:1px solid #e1e6d8;border-radius:15px;padding:7px 10px;background:#f5f7ee;color:#8c987f;font-size:10px}.ceo-emotions button:disabled{opacity:.4;cursor:default}
+.ceo-room[data-emotion=sleepy] .ceo-portrait{animation:ceo-think 9s ease-in-out infinite}
+.ceo-emotion-art{clip-path:inset(1.8% 0 0)}
+
+/* A softly glazed ceramic mug adds depth without changing TOMA's style. */
+.ceo-cup{right:10%;top:0;width:100px;height:92px;background:none;border-radius:0;box-shadow:none;display:block}
+.ceo-cup:before,.ceo-cup:after{display:none}
+.ceo-cup img{width:100%;height:100%;object-fit:contain;display:block}
+.ceo-cup i{top:-17px;left:42px;height:28px;opacity:.65}
+@media(max-width:900px){.ceo-cup{width:86px;height:80px;right:10%;top:4px}.ceo-cup i{left:36px;top:-13px}}
+
+/* Keep breathing continuous while faces gently blend and small gestures react. */
+.ceo-room .ceo-portrait{animation:ceo-breathe 7s ease-in-out infinite!important}
+.ceo-portrait-art,.ceo-emotion-art{display:none!important}
+.ceo-face-stage,.ceo-face-layer{position:absolute;inset:0}
+.ceo-face-layer{background-repeat:no-repeat;will-change:opacity}
+.ceo-face-stage{transform-origin:50% 85%}
+.ceo-room[data-gesture=nod] .ceo-face-stage{animation:ceo-soft-nod 1.8s ease-in-out both}
+.ceo-room[data-gesture=tilt] .ceo-face-stage{animation:ceo-soft-tilt 1.8s ease-in-out both}
+@keyframes ceo-soft-nod{0%,100%{transform:translateY(0) rotate(0)}45%{transform:translateY(3px) rotate(.7deg)}70%{transform:translateY(1px)}}
+@keyframes ceo-soft-tilt{0%,100%{transform:rotate(0)}45%,65%{transform:rotate(-1.8deg)}}
+@media(prefers-reduced-motion:reduce){.ceo-room .ceo-portrait,.ceo-face-stage{animation:none!important}}
+/* Anchor the saucer to the horizontal desktop, above its front edge. */
+.ceo-cup{top:auto;bottom:65%;width:100px;height:80px}
+.ceo-cup:after{content:'';display:block;position:absolute;left:9%;right:auto;top:auto;bottom:1px;width:82%;height:9px;border:0;border-radius:50%;background:radial-gradient(ellipse,#78583d45 0%,#78583d20 45%,transparent 75%);filter:blur(1px);z-index:0}
+.ceo-cup img{position:relative;z-index:1}.ceo-cup i{z-index:2}
+@media(max-width:900px){.ceo-cup{top:auto;bottom:65%;width:86px;height:69px}}
+/* Soften the office behind TOMA while keeping the foreground desktop crisp. */
+.ceo-room:before{content:'';position:absolute;inset:0;background:inherit;filter:blur(4px);mask-image:linear-gradient(to bottom,#000 0%,#000 64%,transparent 78%);pointer-events:none;z-index:0}
+.ceo-room-label{z-index:1}
+/* Reference image: warm shelves, graphite notebook and soft amber light. */
+.ceo-room-label{color:#fff5e6;text-shadow:0 2px 8px #302b27}.ceo-room-label small{color:#f5e6cc}
+.ceo-laptop{border-color:#77777a;background:linear-gradient(125deg,#777679,#5b5a60 45%,#46454b);box-shadow:inset 0 1px 2px #c8c4bb77,5px 9px 12px #35251d44}
+.ceo-laptop:before{background:linear-gradient(#77777d,#4b4b53);border-color:#696971}.ceo-tomato-logo{fill:#28282e;filter:none}
+.company-panel{margin:24px 0;padding:26px;border:1px solid #e7e5d9;border-radius:24px;background:#fffdf6;color:#61715e}.company-panel h2{font-size:20px}.company-panel>p{font-size:13px}.company-panel form{display:grid;gap:10px;max-width:700px}.company-panel textarea{min-height:86px;padding:14px;border:1px solid #dce3d3;border-radius:14px;font:inherit;resize:vertical}.company-panel button{width:fit-content;padding:10px 16px;border:0;border-radius:14px;background:#e8eddf;color:#50624e;cursor:pointer}.company-jobs{display:grid;gap:16px;margin-top:20px}.company-jobs article{padding:18px;border:1px solid #e4e7dd;border-radius:16px;min-width:0}.company-jobs h3{font-size:15px;white-space:pre-wrap;overflow-wrap:anywhere}.company-jobs p,.company-jobs summary{font-size:13px}.company-jobs button{margin:8px 8px 0 0}.company-jobs pre{white-space:pre-wrap;overflow-wrap:anywhere;font:13px/1.8 inherit;background:#f2f4ec;padding:16px;border-radius:12px}.company-error{color:#ae615b}
