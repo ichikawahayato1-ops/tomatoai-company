@@ -312,3 +312,6 @@
 .ceo-desk-props i{position:absolute;left:87%;top:40%;width:9px;height:22px;border-left:2px solid #fff9;border-radius:50%;filter:blur(1px);opacity:.45;animation:steam 6s ease-in-out infinite}
 @media(max-width:900px){.ceo-desk-props{left:1%;width:96%;bottom:43%}.ceo-desk-props i{height:16px;top:37%}}
 @media(prefers-reduced-motion:reduce){.ceo-desk-props i{animation:none}}
+
+/* Keep TOMA behind the desk surface throughout breathing and gestures. */
+.ceo-seat{position:absolute;inset:0;z-index:2;clip-path:inset(0 0 26% 0)}
