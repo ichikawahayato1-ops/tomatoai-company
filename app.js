@@ -1,3 +1,4 @@
+import {mountSeedLearning} from './seed-learning.js';
 import {mountCompanyWorkflow} from './company-workflow.js';
 import {createCeoView} from './ceo-view.js';
 import {employees,characterState,OfficeStore,actions} from './state.js';
@@ -267,3 +268,5 @@ ensurePatrol();animateVisit();render();requestAnimationFrame(animate);
 if(location.hash==='#toma')ceoView.open();
 
 const companyWorkflow=mountCompanyWorkflow({dispatch:event=>window.tomatoOffice.dispatch(event)});
+
+mountSeedLearning();

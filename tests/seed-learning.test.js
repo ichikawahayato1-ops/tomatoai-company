@@ -1,0 +1,6 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {learningStore,saveRate,validateLearning} from '../seed-learning.js';
+const record={title:'ケア投稿',date:'2026-10-07',reach:'1000',saves:'30',likes:'',follows:'',insight:'保存が多い',plan:'手順を増やす',stage:'proposal',result:''};
+test('learning persists edits and leaves unknown metrics distinct from zero',()=>{const memory=new Map(),storage={getItem:k=>memory.get(k)??null,setItem:(k,v)=>memory.set(k,v)};const store=learningStore(storage),entry=store.save(record);assert.equal(entry.likes,null);assert.equal(saveRate(entry),'3.0%');store.save({...entry,stage:'adopted'});const restored=learningStore(storage).list();assert.equal(restored.length,1);assert.equal(restored[0].stage,'adopted');assert.equal(saveRate({...entry,reach:0}),'未計算');assert.throws(()=>validateLearning({...entry,stage:'evaluated'}));assert.throws(()=>validateLearning({...entry,saves:-1}));});
+test('corrupt data and failed writes are preserved without claiming a saved entry',()=>{const corrupt=learningStore({getItem:()=>'{bad',setItem:()=>assert.fail('must not overwrite')});assert.throws(()=>corrupt.save(record));const failed=learningStore({getItem:()=>null,setItem:()=>{throw Error('quota');}});assert.throws(()=>failed.save(record));assert.equal(failed.list().length,0);});

@@ -168,7 +168,7 @@ class Handler(BaseHTTPRequestHandler):
             body=(ROOT/'index.html').read_text().replace('</head>','<meta name="company-storage" content="server"><script>if(!location.hash)location.hash="toma";</script></head>')
             self.reply(200,body.encode(),'text/html; charset=utf-8');return
         # Serve only app assets, never database, secrets or repository files.
-        allowed={'app.js','state.js','style.css','ceo-view.js','portrait-motion.js','company-workflow.js','remote-workflow.js'}
+        allowed={'app.js','state.js','style.css','ceo-view.js','portrait-motion.js','company-workflow.js','remote-workflow.js','seed-learning.js'}
         relative=path.lstrip('/')
         file=(ROOT/relative).resolve()
         if file.parent==ROOT and relative in allowed:

@@ -3,7 +3,7 @@ import base64,re
 root=Path(__file__).resolve().parent.parent
 css=(root/'style.css').read_text()
 modules=[]
-for name in ['state.js','portrait-motion.js','ceo-view.js','remote-workflow.js','company-workflow.js','app.js']:
+for name in ['state.js','portrait-motion.js','ceo-view.js','remote-workflow.js','company-workflow.js','seed-learning.js','app.js']:
  s=(root/name).read_text()
  s=re.sub(r'^import .*?;\n','',s,flags=re.M)
  s=re.sub(r'^export ','',s,flags=re.M)
